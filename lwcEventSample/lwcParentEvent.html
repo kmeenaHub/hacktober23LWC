@@ -1,0 +1,24 @@
+<template>
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" medium-device-size="12" padding="around-small">
+            <lightning-card variant="Narrow">
+                <b class="slds-align_absolute-center">Sibling Communication within same container using LMS</b>                    
+            </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
+
+    <lightning-layout multiple-rows>
+        <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+            <lightning-card variant="Narrow" >
+                <b class="slds-align_absolute-center">Sibling 1</b>
+                <c-lwc-demo-l-m-s-event-sibling1-component></c-lwc-demo-l-m-s-event-sibling1-component>                    
+            </lightning-card>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+            <lightning-card variant="Narrow" >
+                <b class="slds-align_absolute-center">Sibling 2</b> 
+                <c-lwc-demo-l-m-s-event-sibling2-component></c-lwc-demo-l-m-s-event-sibling2-component>
+            </lightning-card>
+        </lightning-layout-item>
+    </lightning-layout>
+</template>
