@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-m-around_medium">
+        <p>MessageChannel: lmsDemoChannel__c</p>
+        <br>
+    </div>
+    <!-- Default/basic -->
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-button label="Publish1" onclick={publishLMS}></lightning-button>
+    </div>
+
+    <div class="slds-p-around_medium lgc-bg">
+        <lightning-button label="Subscribe1" onclick={subscribeLMS}></lightning-button>
+        <lightning-button label="Unsubscribe1" onclick={unsubscribeLMS}></lightning-button>
+        <p>Latest Message Received</p>
+        <lightning-formatted-text value={receivedMessage}></lightning-formatted-text>
+    </div>
+</template>
